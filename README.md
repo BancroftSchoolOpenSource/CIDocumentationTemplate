@@ -6,4 +6,4 @@ RBE Class team repo for team 07 test
 
 
 
-Kevin Harrington ![Kevin Harrington](kh_profile.jpeg)
+Kevin Harrington ![Kevin Harrington](image/kh_profile.jpeg)
