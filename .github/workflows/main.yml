@@ -17,7 +17,7 @@ jobs:
       - run: echo $PWD
       - run: ls -al ./
       - run: ls -al ../
-      - run: pandoc  --self-contained --from markdown --output=BancroftRobodogsNotebook.pdf README.md
+      - run: pandoc  --self-contained  --embed-resources --from markdown --output=BancroftRobodogsNotebook.pdf README.md
       - run: ls -al .
       - name: release
         uses: actions/create-release@v1
