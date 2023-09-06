@@ -10,6 +10,7 @@ jobs:
         with:
           args: >-  # allows you to break string into multiple lines
             --standalone
+            --from markdown 
             --output=BancroftRobodogsNotebook.pdf
             README.md
       - run: ls -al .
