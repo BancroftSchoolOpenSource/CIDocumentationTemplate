@@ -8,5 +8,7 @@ jobs:
     steps:
       - run: sudo apt install pandoc texlive-latex-extra
       - run: echo $PWD
+      - run: ls -al ./
+      - run: ls -al ../
       - run: pandoc --from markdown --output=BancroftRobodogsNotebook.pdf README.md
       - run: ls -al .
