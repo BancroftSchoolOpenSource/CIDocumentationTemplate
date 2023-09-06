@@ -6,10 +6,11 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-22.04
     steps:
+      - run: apt install pandoc texlive-latex-extra
+      - run: ls -al .
       - uses: docker://pandoc/core:2.9
         with:
           args: >-  # allows you to break string into multiple lines
-            --standalone
             --from markdown 
             --output=BancroftRobodogsNotebook.pdf
             README.md
