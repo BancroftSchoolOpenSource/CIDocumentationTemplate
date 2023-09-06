@@ -3,9 +3,14 @@ name: Long Usage
 on: push
 
 jobs:
+
   convert_via_pandoc:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v2
+        with:
+            submodules: recursive 
       - run: sudo apt install pandoc texlive-latex-extra
       - run: echo $PWD
       - run: ls -al ./
