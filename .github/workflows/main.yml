@@ -11,9 +11,11 @@ jobs:
         uses: actions/checkout@v2
         with:
             submodules: recursive 
-      - run: sudo apt install pandoc texlive-latex-extra
-      - run: echo $PWD
-      - run: ls -al ./
-      - run: ls -al ../
-      - run: pandoc --from markdown --output=BancroftRobodogsNotebook.pdf README.md
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: >-  # allows you to break string into multiple lines
+            --standalone
+            --from markdown
+            --output=BancroftRobodogsNotebook.pdf
+            README.md
       - run: ls -al .
