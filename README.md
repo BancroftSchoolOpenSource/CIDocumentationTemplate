@@ -7,3 +7,7 @@ RBE Class team repo for team 07 test
 Kevin Harrington 
 
 ![Kevin Harrington](image/kh_profile.jpeg)
+
+Elisa Heinricher
+
+![Elisa as cat](image/elisa.jpg)
