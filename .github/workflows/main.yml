@@ -8,10 +8,5 @@ jobs:
     steps:
       - run: sudo apt install pandoc texlive-latex-extra
       - run: ls -al .
-      - uses: docker://pandoc/core:2.9
-        with:
-          args: >-  # allows you to break string into multiple lines
-            --from markdown 
-            --output=BancroftRobodogsNotebook.pdf
-            README.md
+      - run: pandoc --from markdown --output=BancroftRobodogsNotebook.pdf README.md
       - run: ls -al .
