@@ -1,11 +1,9 @@
-# RobodogsCode_2023_07
+# RobodogsCode 2023 07
 
 RBE Class team repo for team 07 test
 
 # Members
 
-
-
 Kevin Harrington 
 
-<img src="image/kh_profile.jpeg" width=25% height=25%>
+![Kevin Harrington](image/kh_profile.jpeg)
